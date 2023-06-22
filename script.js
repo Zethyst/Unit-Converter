@@ -331,7 +331,7 @@ const showList = () => {
     document.querySelector(".hidingInput").classList.toggle("hidden");
     if (document.querySelector(".hidingInput").classList.contains("hidden")) {
         propmenu.style.transform = "translateY(-108px)";
-        submenu.style.height = "225px";
+        submenu.style.height = "200px";
     }
     else {
         propmenu.style.transform = "translateY(-25px)";
