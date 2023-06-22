@@ -407,7 +407,10 @@ input::-webkit-outer-spin-button,
     font-size: 22px;
   }
   .unitsubmenu,.resultsubmenu {
-    height: 80px;
+    height: 90px;
+  }
+  .unit_Wrapper i{
+    transform: translate(15px);
   }
   input{
     font-size: 2rem;
