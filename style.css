@@ -410,7 +410,7 @@ input::-webkit-outer-spin-button,
     height: 90px;
   }
   .unit_Wrapper i{
-    transform: translate(15px);
+    transform: translate(20px);
   }
   input{
     font-size: 2rem;
