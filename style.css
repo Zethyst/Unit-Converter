@@ -174,7 +174,7 @@ ul::-webkit-scrollbar-track {
 .submenu {
   position: absolute;
   width: 200px;
-  height: 40px;
+  height: 36px;
   left: 50%;
   margin-left: -100px;
   transform-origin: left top;
@@ -184,7 +184,7 @@ ul::-webkit-scrollbar-track {
 .unitsubmenu {
   position: absolute;
   width: 150px;
-  height: 65px;
+  height: 60px;
   left: 52%;
   transform-origin: left top;
   z-index: 1000;
@@ -193,7 +193,7 @@ ul::-webkit-scrollbar-track {
 .resultsubmenu {
   position: absolute;
   width: 150px;
-  height: 65px;
+  height: 60px;
   left: 52%;
   transform-origin: left top;
   z-index: 1000;
