@@ -271,12 +271,13 @@ const unitclick = (e) => {
     const unitID = document.querySelector("#inputID");
     unitID.innerText = e.firstElementChild.innerText;
     input1.value=0;
-    input2.input();
+    input2.value=0;
 }
 const resultclick = (e) => {
     const resultID = document.querySelector("#resultID");
     resultID.innerText = e.firstElementChild.innerText;
     input2.value=0;
+    input1.value=0;
 }
 
 function FillMenuWithArray(myMenu, myArray) {

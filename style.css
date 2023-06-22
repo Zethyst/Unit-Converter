@@ -285,7 +285,9 @@ input {
   outline: none;
   border: none;
   background: transparent;
-  pointer-events: none;
+}
+input::placeholder{
+  color: white;
 }
 input::-webkit-outer-spin-button,
 ::-webkit-inner-spin-button {
@@ -348,6 +350,9 @@ input::-webkit-outer-spin-button,
   outline: none;
   border: none;
   background: transparent;
+}
+.resultBox input::placeholder{
+  color: rgba(40, 156, 252, 1);
 }
 #resultID {
   color: rgba(40, 156, 252, 1);
