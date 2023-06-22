@@ -20,7 +20,7 @@
   --wine:linear-gradient(24deg, #33001b, #ff0084); 
   --superman:linear-gradient(24deg, #ff6e7f, #bfe9ff);
   --forest:linear-gradient(24deg, #8360c3, #2ebf91);
-  --caramel:linear-gradient(24deg, #FFD194, #D1913C);
+  --caramel:linear-gradient(24deg, #FFD194, #ce892f);
   --sand:linear-gradient(24deg, #DECBA4, #3E5151);
 
 }
@@ -76,7 +76,7 @@ body{
 }
 #unitIcon{
   position:absolute;
-  transform: translate(-75px,-58px);
+  transform: translate(-75px,-57px);
 }
 .property_menu {
   transform: translateY(-25px);
@@ -151,6 +151,9 @@ ul::-webkit-scrollbar-track {
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   letter-spacing: 3px;
+}
+.menu a{
+  font-size: 27px;
 }
 .unit_menu a {
   display: block;
@@ -409,9 +412,12 @@ input::-webkit-outer-spin-button,
   #unitIcon{
     transform: translate(-75px,-52px);
   }
-  .menu a, .unit_menu a {
-    font-size: 22px;
+  .menu a{
+    font-size: 26px;
   }
+  .unit_menu a {
+    font-size: 22px;
+  } 
   .unitsubmenu,.resultsubmenu {
     height: 90px;
   }
@@ -476,6 +482,9 @@ input::-webkit-outer-spin-button,
   }
   .unit_menu{
     width: 140px;
+  }
+  .menu a{
+    font-size: 22px;
   }
   .unit_menu a {
     font-size: 18px;
