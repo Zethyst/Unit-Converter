@@ -160,7 +160,7 @@ const propclick = (e) => {
     else if (propertyID.innerText.toUpperCase() == "ACCELERATION") {
         unitIcon.innerText = "speed";
         unitIcon.style.paddingLeft = "0px";
-        unitIcon.style.paddingRight = "80px"
+        unitIcon.style.paddingRight = "70px"
         inputBox.style.background = "var(--sublime)";
         colorChange1.style.borderBottom = "2px solid #ff4065"
         colorChange2.style.color = "#ff4065";
@@ -226,7 +226,7 @@ const propclick = (e) => {
     else if (propertyID.innerText.toUpperCase() == "TEMPERATURE") {
         unitIcon.innerText = "device_thermostat";
         unitIcon.style.paddingLeft = "0px";
-        unitIcon.style.paddingRight = "80px"
+        unitIcon.style.paddingRight = "60px"
         inputBox.style.background = "var(--superman)";
         colorChange1.style.borderBottom = "2px solid #ff6e7f"
         colorChange2.style.color = "#ff6e7f";
