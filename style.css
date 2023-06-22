@@ -285,6 +285,7 @@ input {
   outline: none;
   border: none;
   background: transparent;
+  pointer-events: none;
 }
 input::-webkit-outer-spin-button,
 ::-webkit-inner-spin-button {
@@ -410,7 +411,10 @@ input::-webkit-outer-spin-button,
     height: 90px;
   }
   .unit_Wrapper i{
-    transform: translate(15px);
+    transform: translate(10px);
+  }
+  .resultBox .unit_Wrapper i{
+    transform: translate(10px);
   }
   input{
     font-size: 2rem;
