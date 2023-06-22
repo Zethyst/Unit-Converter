@@ -16,6 +16,7 @@ const input1 = document.querySelector("#input1");
 const input2 = document.querySelector("#input2");
 const unitIcon = document.querySelector("#unitIcon");
 var temp = false;
+var mobileMode=false;
 var property = new Array();
 var unit = new Array();
 var factor = new Array();
@@ -77,6 +78,10 @@ property[13] = "Volume";
 unit[13] = new Array("Cubic Meter (m³)", "Cubic centimeter (cm³)", "Cubic millimeter (mm³)", "Acre-foot", "Barrel (oil)", "Board foot", "Bushel (US)", "Cup", "Fluid ounce (US)", "Cubic foot", "Gallon (UK)", "Gallon (US,dry)", "Gallon (US,liq)", "Gill (UK)", "Gill (US)", "Cubic inch (in³)", "Liter (new)", "Liter (old)", "Ounce (UK,fluid)", "Ounce (US,fluid)", "Peck (US)", "Pint (US,dry)", "Pint (US,liq)", "Quart (US,dry)", "Quart (US,liq)", "Stere", "Tablespoon", "Teaspoon", "Ton (register)", "Cubic yard");
 factor[13] = new Array(1, .000001, .000000001, 1233.482, .1589873, .002359737, .03523907, .0002365882, .00002957353, .02831685, .004546087, .004404884, .003785412, .0001420652, .0001182941, .00001638706, .001, .001000028, .00002841305, .00002957353, 8.8097680E-03, .0005506105, 4.7317650E-04, .001101221, 9.46353E-04, 1, .00001478676, .000004928922, 2.831685, .7645549);
 
+var w = window.innerWidth;
+if (w < 360) {
+    mobileMode=true;
+}
 
 function UpdateUnitMenu(propMenu, unitMenu) {
     var k;
@@ -106,8 +111,10 @@ const propclick = (e) => {
     propertyID.innerText = e.firstElementChild.innerText;
     if (propertyID.innerText.toUpperCase() == "AREA") {
         unitIcon.innerText = "architecture";
-        unitIcon.style.paddingLeft = "20px";
-        unitIcon.style.paddingRight = "0px"
+        if (!mobileMode) {
+            unitIcon.style.paddingLeft = "20px";
+            unitIcon.style.paddingRight = "0px"          
+        }
         inputBox.style.background = "var(--red)";
         colorChange1.style.borderBottom = "2px solid rgba(255, 84, 84, 1)";
         colorChange2.style.color = "rgba(255, 84, 84, 1)";
@@ -118,8 +125,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "LENGTH") {
         unitIcon.innerText = "straighten";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
         unitIcon.style.paddingRight = "0px"
+        }
         inputBox.style.background = "var(--stellar)";
         colorChange1.style.borderBottom = "2px solid rgba(40, 156, 252, 1)"
         colorChange2.style.color = "rgba(40, 156, 252, 1)";
@@ -129,8 +138,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "CURRENCY") {
         unitIcon.innerText = "monetization_on";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
-        unitIcon.style.paddingRight = "30px"
+        unitIcon.style.paddingRight = "34px"
+        }
         inputBox.style.background = "var(--caramel)";
         colorChange1.style.borderBottom = "2px solid #D1913C"
         colorChange2.style.color = "#D1913C";
@@ -141,8 +152,10 @@ const propclick = (e) => {
     else if (propertyID.innerText.toUpperCase() == "MASS") {
         unitIcon.innerText = "scale";
         // unitIcon.innerText="weight";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "20px";
         unitIcon.style.paddingRight = "0px"
+        }
         inputBox.style.background = "var(--green)";
         colorChange1.style.borderBottom = "2px solid #96c93d"
         colorChange2.style.color = "#96c93d";
@@ -152,8 +165,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "VELOCITY") {
         unitIcon.innerText = "speed";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
         unitIcon.style.paddingRight = "20px"
+        }
         inputBox.style.background = "var(--butterfly)";
         colorChange1.style.borderBottom = "2px solid #ff4065"
         colorChange2.style.color = "#ff4065";
@@ -163,8 +178,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "ACCELERATION") {
         unitIcon.innerText = "speed";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
-        unitIcon.style.paddingRight = "70px"
+        unitIcon.style.paddingRight = "95px"
+        }
         inputBox.style.background = "var(--sublime)";
         colorChange1.style.borderBottom = "2px solid #ff4065"
         colorChange2.style.color = "#ff4065";
@@ -174,8 +191,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "ELECTRICITY") {
         unitIcon.innerText = "electric_bolt";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
         unitIcon.style.paddingRight = "50px"
+        }
         inputBox.style.background = "var(--mojito)";
         colorChange1.style.borderBottom = "2px solid #103CE7"
         colorChange2.style.color = "#103CE7";
@@ -185,8 +204,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "ENERGY") {
         unitIcon.innerText = "energy_savings_leaf";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
         unitIcon.style.paddingRight = "0px"
+        }
         inputBox.style.background = "var(--azure)";
         colorChange1.style.borderBottom = "2px solid #0172AF"
         colorChange2.style.color = "#0172AF";
@@ -196,8 +217,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "FORCE") {
         unitIcon.innerText = "landslide";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "10px";
-        unitIcon.style.paddingRight = "0px"
+        unitIcon.style.paddingRight = "0px";
+        }
         inputBox.style.background = "var(--royal)";
         colorChange1.style.borderBottom = "2px solid #141e30"
         colorChange2.style.color = "#141e30";
@@ -207,8 +230,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "POWER") {
         unitIcon.innerText = "power_settings_new";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "10px";
         unitIcon.style.paddingRight = "0px"
+        }
         inputBox.style.background = "var(--neon)";
         colorChange1.style.borderBottom = "2px solid #EE49FD"
         colorChange2.style.color = "#EE49FD";
@@ -218,8 +243,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "PRESSURE") {
         unitIcon.innerText = "compress";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
         unitIcon.style.paddingRight = "20px"
+        }
         inputBox.style.background = "var(--wine)";
         colorChange1.style.borderBottom = "2px solid #ff0084"
         colorChange2.style.color = "#ff0084";
@@ -229,8 +256,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "TEMPERATURE") {
         unitIcon.innerText = "device_thermostat";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
-        unitIcon.style.paddingRight = "60px"
+        unitIcon.style.paddingRight = "95px";
+        }
         inputBox.style.background = "var(--superman)";
         colorChange1.style.borderBottom = "2px solid #ff6e7f"
         colorChange2.style.color = "#ff6e7f";
@@ -240,8 +269,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "TIME") {
         unitIcon.innerText = "schedule";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "40px";
-        unitIcon.style.paddingRight = "0px"
+        unitIcon.style.paddingRight = "0px";
+        }
         inputBox.style.background = "var(--forest)";
         colorChange1.style.borderBottom = "2px solid #8360c3"
         colorChange2.style.color = "#8360c3";
@@ -251,8 +282,10 @@ const propclick = (e) => {
     }
     else if (propertyID.innerText.toUpperCase() == "VOLUME") {
         unitIcon.innerText = "view_in_ar";
+        if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
-        unitIcon.style.paddingRight = "0px"
+        unitIcon.style.paddingRight = "0px";
+        }
         inputBox.style.background = "var(--sand)";
         colorChange1.style.borderBottom = "2px solid #d7c092"
         colorChange2.style.color = "#d7c092";

@@ -133,7 +133,7 @@ ul::-webkit-scrollbar-track {
 }
 
 .menu > li {
-  width: 225px;
+  width: 250px;
   margin: 0 auto;
 }
 .unit_menu > li {
@@ -436,23 +436,25 @@ input::-webkit-outer-spin-button,
 }
 @media screen and (max-width: 360px) {
   #unitIcon{
-    transform: translate(-75px,-49px);
+    position: relative;
+    transform: translate(-2px,-30px);
+    scale: 2;
   }
   .unitsubmenu,.resultsubmenu {
     height: 100px;
   }
   .inputBox i{
-    transform: translate(117px, -20px);
+    transform: translate(120px, -20px);
   }
   
   .unit_menu a {
     font-size: 18px;
   }
   .unit_Wrapper i{
-    transform: translate(25px);
+    transform: translate(5px);
   }
   .resultBox .unit_Wrapper i{
-    transform: translateX(20px);
+    transform: translateX(3px);
   }
   .unit_input{
     width: 115px;
@@ -471,10 +473,11 @@ input::-webkit-outer-spin-button,
 }
 @media screen and (max-width: 325px) {
   #unitIcon{
-    transform: translate(-75px,-49px);
+    transform: translate(-2px,-30px);
+    scale: 2;
   }
   .inputBox i{
-    transform: translate(96px, -20px);
+    transform: translate(100px, -20px);
   }
   .unitsubmenu,.resultsubmenu {
     width: 130px;
@@ -490,10 +493,10 @@ input::-webkit-outer-spin-button,
     font-size: 18px;
   }
   .unit_Wrapper i{
-    transform: translate(10px);
+    transform: translate(5px);
   }
   .resultBox .unit_Wrapper i{
-    transform: translateX(10px);
+    transform: translateX(5px);
   }
   .unit_input{
     width: 110px;
