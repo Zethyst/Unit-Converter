@@ -180,7 +180,7 @@ const propclick = (e) => {
         unitIcon.innerText = "speed";
         if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
-        unitIcon.style.paddingRight = "95px"
+        unitIcon.style.paddingRight = "90px"
         }
         inputBox.style.background = "var(--sublime)";
         colorChange1.style.borderBottom = "2px solid #ff4065"
@@ -258,7 +258,7 @@ const propclick = (e) => {
         unitIcon.innerText = "device_thermostat";
         if (!mobileMode) {
         unitIcon.style.paddingLeft = "0px";
-        unitIcon.style.paddingRight = "95px";
+        unitIcon.style.paddingRight = "90px";
         }
         inputBox.style.background = "var(--superman)";
         colorChange1.style.borderBottom = "2px solid #ff6e7f"
