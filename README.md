@@ -43,7 +43,7 @@
 
 ![Acceleration](/img/acceleration.png)
 
-<!-- ![Temperature](/img//temperature.png) -->
+![Temperature](/img/temperature.png)
 
 <h2>📬 Contact</h2>
 
